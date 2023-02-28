@@ -42,7 +42,7 @@ public class SynTest {
             try {
                 Thread.sleep(1000);//锁依然还是我的，但是我让出cpu的执行时间
                 System.out.println("b");
-                this.notifyAll();//唤醒其他线程
+                this.notifyAll();//唤醒其他线程 唤醒所有处于等待状态的线程，该方法并不是将对象的锁给所有线程，而是让它们竞争，只有获得锁的线程才能进入就绪状态；
                 this.wait();//进入对象的等待池（wait pool）等待被另外一个线程唤醒，否则不会执行
             } catch (InterruptedException e) {
                 e.printStackTrace();
