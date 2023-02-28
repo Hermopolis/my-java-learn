@@ -1,6 +1,6 @@
 package org.com.hermopolis.thread;
 
-public class Test {
+public class SubClassTest {
     static  class A {
         static {
             System.out.print("1");
