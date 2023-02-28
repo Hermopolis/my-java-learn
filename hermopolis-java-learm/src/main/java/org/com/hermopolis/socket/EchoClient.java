@@ -7,9 +7,9 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class EchoClient2 {
+public class EchoClient {
     public static void main(String[] args) throws IOException {
-        String serverHost = "192.168.3.4";
+        String serverHost = "127.0.0.1";
         int serverPort = 996;
         String targetHost = "127.0.0.1";
         int targetPort = 997;

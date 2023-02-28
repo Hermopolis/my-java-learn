@@ -35,7 +35,7 @@ public class EchoServer {
                 if (inputLine.startsWith("client-connect")) {
                     String connect[] = inputLine.split(":");
                     //获得一个请求要开一个新的监听端口
-                    executorService.execute(() -> server(Integer.parseInt(connect[2])));
+                   // executorService.execute(() -> server(Integer.parseInt(connect[2])));
 
                 }
                 out.println(inputLine);
