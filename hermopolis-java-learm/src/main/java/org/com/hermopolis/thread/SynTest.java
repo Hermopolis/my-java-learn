@@ -54,7 +54,9 @@ public class SynTest {
 
     public void run3() {
         while (true) {
+            this.notifyAll();
             try {
+
                 Thread.sleep(1000);
 
             } catch (InterruptedException e) {
