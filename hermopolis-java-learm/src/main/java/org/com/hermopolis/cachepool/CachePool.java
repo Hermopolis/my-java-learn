@@ -6,6 +6,7 @@ public class CachePool {
         Integer y = new Integer(123);
         System.out.println(x == y);    // false
         Integer z = Integer.valueOf(123);
+
         Integer k = Integer.valueOf(123);
         System.out.println(z == k);
         char a = '\u0001';
@@ -17,8 +18,8 @@ public class CachePool {
 // The number 26, in binary
         int binVal = 0b11010;
         //转成2进制
-        System.out.println(Integer.toBinaryString(-1));
-        byte sb = 0b1111;
+
+        byte sb = 0b1001;
         System.out.println(sb);
         short ss = 0b1111111_11111111;
         System.out.println(ss);
@@ -28,7 +29,7 @@ public class CachePool {
         long sMax = 0x7fffffffffffffffL;
         System.out.println(smin);
         System.out.println(sMax);
-
+        System.out.println(Long.MIN_VALUE);
         //111111111111111111111111111111111111111111111111111111111111111
         System.out.println(Long.toBinaryString(Long.MAX_VALUE));
         //
@@ -63,5 +64,6 @@ public class CachePool {
         long maxLong = 0x7fff_ffff_ffff_ffffL;
         byte nybbles = 0b0010_0101;
         long bytes = 0b11010010_01101001_10010100_10010010;
+
     }
 }
