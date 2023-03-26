@@ -5,9 +5,13 @@ public class SubClassTest {
         static {
             System.out.print("1");
         }
+        {
+            System.out.print("3");
+        }
         public A() {
             System.out.print("2");
         }
+
     }
     static class B extends A{
         static {
@@ -16,6 +20,10 @@ public class SubClassTest {
         public B() {
            
             System.out.print("b");
+        }
+
+        {
+            System.out.print("c");
         }
     }
     public static void main(String[] args) {
